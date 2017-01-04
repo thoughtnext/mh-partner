@@ -1,1 +1,1 @@
-web: cd master && gulp browsersync
+web: cd master && npm start
