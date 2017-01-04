@@ -1,0 +1,321 @@
+<h3>
+   <!-- START Language list-->
+   <div class="pull-right">
+      <div class="btn-group" uib-dropdown="" is-open="language.listIsOpen">
+         <button class="btn btn-default" type="button" uib-dropdown-toggle="">{{language.selected}}
+            <span class="caret"></span>
+         </button>
+         <ul class="dropdown-menu dropdown-menu-right animated fadeInUpShort" role="menu">
+            <li ng-repeat="(localeId, langName) in language.available"><a ng-click="language.set(localeId, $event)" href="#">{{langName}}</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <!-- END Language list    -->Dashboard
+  <!--  <small>{{ 'dashboard.WELCOME' | translate:{ appName: app.name } }} !</small> -->
+</h3>
+<!-- START widgets box-->
+<div class="row">
+   <div class="col-lg-3 col-sm-6">
+      <!-- START widget-->
+      <div class="panel widget bg-primary">
+         <div class="row row-table">
+            <div class="col-xs-4 text-center bg-primary-dark pv-lg">
+               <em class="icon-people fa-3x"></em>
+            </div>
+            <div class="col-xs-8 pv-lg">
+               <div class="h2 mt0">18</div>
+               <div class="text-uppercase">Student</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-3 col-sm-6">
+      <!-- START widget-->
+      <div class="panel widget bg-purple">
+         <div class="row row-table">
+            <div class="col-xs-4 text-center bg-purple-dark pv-lg">
+               <em class="icon-hourglass fa-3x"></em>
+            </div>
+            <div class="col-xs-8 pv-lg">
+               <div class="h2 mt0">10
+                  <small>K</small>
+               </div>
+               <div class="text-uppercase">Pending Fees</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+      <!-- START widget-->
+      <div class="panel widget bg-green">
+         <div class="row row-table">
+            <div class="col-xs-4 text-center bg-green-dark pv-lg">
+               <em class="icon-docs fa-3x"></em>
+            </div>
+            <div class="col-xs-8 pv-lg">
+               <div class="h2 mt0">100
+               <small>K</small></div>
+               <div class="text-uppercase">Total Revenue</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+      <!-- START date widget-->
+       <div class="panel widget bg-purple">
+         <div class="row row-table">
+            <div class="col-xs-4 text-center bg-purple-dark pv-lg">
+               <em class="icon-hourglass fa-3x"></em>
+            </div>
+            <div class="col-xs-8 pv-lg">
+               <div class="h2 mt0">10
+                  <small></small>
+               </div>
+               <div class="text-uppercase">Worksheet</div>
+            </div>
+         </div>
+      </div>
+      <!-- END date widget    -->
+   </div>
+</div>
+<!-- END widgets box-->
+<div class="row">
+   <!-- START dashboard main content-->
+   <div class="col-md-8">
+   <div class="panel panel-default">
+         <div class="panel-heading">
+            <div class="panel-title">Latest activities</div>
+            <div class="input-group-btn" uib-dropdown="">
+                        <button class="btn btn-default" type="button" uib-dropdown-toggle="">Board
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="">Action</a>
+                           </li>
+                           <li><a href="">Another action</a>
+                           </li>
+                           <li><a href="">Something else here</a>
+                           </li>
+                           <li class="divider"></li>
+                           <li><a href="">Separated link</a>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div class="input-group-btn class-box" uib-dropdown="">
+                        <button class="btn btn-default" type="button" uib-dropdown-toggle="">Class
+                           <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="">Action</a>
+                           </li>
+                           <li><a href="">Another action</a>
+                           </li>
+                           <li><a href="">Something else here</a>
+                           </li>
+                           <li class="divider"></li>
+                           <li><a href="">Separated link</a>
+                           </li>
+                        </ul>
+                     </div>
+         </div>
+         
+         <!-- START list group-->
+         <div class="list-group">
+            <!-- START list group item-->
+            
+            <!-- END list group item-->
+            <!-- START list group item-->
+            
+            <!-- END list group item-->
+            <!-- START list group item-->
+            <div class="list-group-item">
+               <div class="media-box">
+                  <div class="pull-left">
+                     <span class="fa-stack">
+                        <em class="fa fa-circle fa-stack-2x text-danger"></em>
+                        <em class="fa fa-exclamation fa-stack-1x fa-inverse text-white"></em>
+                     </span>
+                  </div>
+                  <div class="media-box-body clearfix">
+                     <small class="text-muted pull-right ml">50%</small>
+                     <div class="media-box-heading"><a class="text-danger m0" href="#">Math</a>
+                     </div>
+                     <uib-progressbar class="progress-xs m0 " value="50" >50%</uib-progressbar>
+                  </div>
+               </div>
+            </div>
+            <!-- END list group item-->
+            <!-- START list group item-->
+            <div class="list-group-item">
+               <div class="media-box">
+                  <div class="pull-left">
+                     <span class="fa-stack">
+                        <em class="fa fa-circle fa-stack-2x text-success"></em>
+                        <em class="fa fa-clock-o fa-stack-1x fa-inverse text-white"></em>
+                     </span>
+                  </div>
+                  <div class="media-box-body clearfix">
+                     <small class="text-muted pull-right ml">82%</small>
+                     <div class="media-box-heading"><a class="text-success m0" href="#">Physics</a>
+                     </div>
+                     <uib-progressbar class="progress-xs m0 " value="82" >82%</uib-progressbar>
+                  </div>
+               </div>
+            </div>
+            <!-- END list group item-->
+            <!-- START list group item-->
+            <div class="list-group-item">
+               <div class="media-box">
+                  <div class="pull-left">
+                     <span class="fa-stack">
+                        <em class="fa fa-circle fa-stack-2x text-warning"></em>
+                        <em class="fa fa-tasks fa-stack-1x fa-inverse text-white"></em>
+                     </span>
+                  </div>
+                  <div class="media-box-body clearfix">
+                     <small class="text-muted pull-right ml">22%</small>
+                     <div class="media-box-heading"><a class="text-warning m0" href="#">Chemistry</a>
+                     </div>
+                     <uib-progressbar class="progress-xs m0 "  value="22" type="warning">22%</uib-progressbar>
+                  </div>
+               </div>
+            </div>
+            <!-- END list group item-->
+         </div>
+         <!-- END list group-->
+         <!-- START panel footer-->
+         <div class="panel-footer clearfix">
+            <a class="pull-left" href="#">
+               <small>Load more</small>
+            </a>
+         </div>
+         <!-- END panel-footer-->
+      </div>
+      </div>
+      <!-- END messages and activity-->
+
+      <div class="col-md-4">
+   <div class="panel panel-default">
+         <div class="panel-heading">
+            <div class="panel-title">Latest activities</div>
+         </div>
+         <!-- START list group-->
+         <div class="list-group">
+            <!-- START list group item-->
+            <div class="list-group-item">
+               <div class="media-box">
+                  <div class="pull-left">
+                     <span class="fa-stack">
+                        <em class="fa fa-circle fa-stack-2x text-purple"></em>
+                        <em class="fa fa-cloud-upload fa-stack-1x fa-inverse text-white"></em>
+                     </span>
+                  </div>
+                  <div class="media-box-body clearfix">
+                     <small class="text-muted pull-right ml">15m</small>
+                     <div class="media-box-heading"><a class="text-purple m0" href="#">NEW FILE</a>
+                     </div>
+                     <p class="m0">
+                        <small><a href="#">Bootstrap.xls</a>
+                        </small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- END list group item-->
+            <!-- START list group item-->
+            <div class="list-group-item">
+               <div class="media-box">
+                  <div class="pull-left">
+                     <span class="fa-stack">
+                        <em class="fa fa-circle fa-stack-2x text-info"></em>
+                        <em class="fa fa-file-text-o fa-stack-1x fa-inverse text-white"></em>
+                     </span>
+                  </div>
+                  <div class="media-box-body clearfix">
+                     <small class="text-muted pull-right ml">2h</small>
+                     <div class="media-box-heading"><a class="text-info m0" href="#">NEW DOCUMENT</a>
+                     </div>
+                     <p class="m0">
+                        <small><a href="#">Bootstrap.doc</a>
+                        </small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- END list group item-->
+            <!-- START list group item-->
+            <div class="list-group-item">
+               <div class="media-box">
+                  <div class="pull-left">
+                     <span class="fa-stack">
+                        <em class="fa fa-circle fa-stack-2x text-danger"></em>
+                        <em class="fa fa-exclamation fa-stack-1x fa-inverse text-white"></em>
+                     </span>
+                  </div>
+                  <div class="media-box-body clearfix">
+                     <small class="text-muted pull-right ml">5h</small>
+                     <div class="media-box-heading"><a class="text-danger m0" href="#">BROADCAST</a>
+                     </div>
+                     <p class="m0"><a href="#">Read</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- END list group item-->
+            <!-- START list group item-->
+            <div class="list-group-item">
+               <div class="media-box">
+                  <div class="pull-left">
+                     <span class="fa-stack">
+                        <em class="fa fa-circle fa-stack-2x text-success"></em>
+                        <em class="fa fa-clock-o fa-stack-1x fa-inverse text-white"></em>
+                     </span>
+                  </div>
+                  <div class="media-box-body clearfix">
+                     <small class="text-muted pull-right ml">15h</small>
+                     <div class="media-box-heading"><a class="text-success m0" href="#">NEW MEETING</a>
+                     </div>
+                     <p class="m0">
+                        <small>On
+                           <em>10/12/2015 09:00 am</em>
+                        </small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!-- END list group item-->
+            <!-- START list group item-->
+            <div class="list-group-item">
+               <div class="media-box">
+                  <div class="pull-left">
+                     <span class="fa-stack">
+                        <em class="fa fa-circle fa-stack-2x text-warning"></em>
+                        <em class="fa fa-tasks fa-stack-1x fa-inverse text-white"></em>
+                     </span>
+                  </div>
+                  <div class="media-box-body clearfix">
+                     <small class="text-muted pull-right ml">1w</small>
+                     <div class="media-box-heading"><a class="text-warning m0" href="#">TASKS COMPLETION</a>
+                     </div>
+                     <uib-progressbar class="progress-xs m0" value="22" type="warning">22%</uib-progressbar>
+                  </div>
+               </div>
+            </div>
+            <!-- END list group item-->
+         </div>
+         <!-- END list group-->
+         <!-- START panel footer-->
+         <div class="panel-footer clearfix">
+            <a class="pull-left" href="#">
+               <small>Load more</small>
+            </a>
+         </div>
+         <!-- END panel-footer-->
+      </div>
+      </div>
+   <!-- END dashboard main content-->
+   <!-- START dashboard sidebar-->
+   
+</div>
