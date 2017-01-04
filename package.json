@@ -4,6 +4,8 @@
   "description": "Angle - Bootstrap Admin App + AngularJS",
   "author": "@themicon_co",
   "devDependencies": {
+    "bower": "^1.8.0",
+
     "bower-npm-resolver": "^0.6.0",
     "browser-sync": "^2.15.0",
     "del": "^2.2.2",
@@ -47,11 +49,12 @@
     "yargs": "^5.0.0"
   },
   "scripts": {
-    "prestart": "cd master && bower install",
-    "start": "npm install --prefix ./master",
-    "poststart": "cd master && gulp"
+    "prestart": "npm install -g bower",
+    "start": "npm install --prefix ./master && cd master && bower install",
+    "poststart": "gulp"
   },
   "dependencies": {
+    "bower": "^1.8.0",
     "angular-chartist.js": "^4.2.1",
     "graceful-fs": "^4.1.11",
     "gulp": "^3.9.1",
