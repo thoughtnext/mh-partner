@@ -1,1 +1,0 @@
-web: cd master && npm start
